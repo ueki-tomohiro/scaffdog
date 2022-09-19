@@ -96,6 +96,7 @@ const createPromptQuestion = (question: Question): PromptQuestion => {
       type: question.multiple === true ? 'checkbox' : 'list',
       choices: question.choices,
       default: question.initial,
+      message: question.message,
       validate,
     };
   }
